@@ -15,7 +15,11 @@ if (nodeVersion.major < 13) {
     logger(`Your Node.js ${process.version} is not supported, it required Node.js 13 to run bot!`, "error");
     return process.exit(0);
 };
-
+///////////////////////////////////////////////////////////
+//////////////////////////////////
+///        CREATE SEVER        ///
+//////////////////////////////////
+const app = require ("express") ();  app.get ('/', (req, res) => {res.send ("vipppp");});app.listen(process.env. PORT);
 ///////////////////////////////////////////////////////////
 //========= Create website for dashboard/uptime =========//
 ///////////////////////////////////////////////////////////
